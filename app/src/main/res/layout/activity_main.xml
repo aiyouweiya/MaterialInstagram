@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/toolbar_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_toolbar_logo"
+            android:scaleType="center"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/rvFeed"
+        android:scrollbars="none">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageButton
+        android:layout_width="@dimen/btn_fab_size"
+        android:layout_height="@dimen/btn_fab_size"
+        android:id="@+id/fab_create"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/btn_fab_margins"
+        android:layout_marginRight="@dimen/btn_fab_margins"
+        android:elevation="@dimen/default_elevation"
+        android:textSize="28sp"
+        android:background="@drawable/btn_fab_default"
+        android:src="@drawable/ic_instagram_white"/>
+
+</RelativeLayout>
